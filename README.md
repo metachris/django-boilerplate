@@ -31,7 +31,12 @@ Setup
 Well done. Now lets dive into the app (https://docs.djangoproject.com/en/1.3/intro/tutorial02/)
 ----------------
 
-- Add custom urls to the `urls.py` file
+- Add custom urls to the `urls.py` file, and some views, perhaps even templates
 
+----------------
+
+Setting up static files (https://docs.djangoproject.com/en/dev/howto/static-files/)
+
+*
 
 
