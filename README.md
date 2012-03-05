@@ -31,7 +31,7 @@ Setup
 Well done. Now lets dive into the app (https://docs.djangoproject.com/en/1.3/intro/tutorial02/)
 ----------------
 
-- Add custom `urls.py` file to the app and include from main `urls.py` file
+- Add custom urls to the `urls.py` file
 
 
 
