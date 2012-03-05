@@ -1,0 +1,3 @@
+[submodule "boilerplate/static/twitter-bootstrap"]
+	path = boilerplate/static/twitter-bootstrap
+	url = https://github.com/twitter/bootstrap/
