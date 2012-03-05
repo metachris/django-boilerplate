@@ -31,7 +31,7 @@ post_save.connect(UserProfile.create_by_signal, sender=User)
 
 
 class Project(models.Model):
-    date_created = models.DateTimeField('date created')
+    date_created = models.DateTimeField('date created', auto_now_add=True)
     user = models.OneToOneField(User)
 
     name = models.CharField(max_length=100, )
