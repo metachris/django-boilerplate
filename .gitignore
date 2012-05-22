@@ -1,4 +1,8 @@
 *.pyc
+*.pyo
+*.pot
+*.log
 .idea
 env
-settings-dev.py
+settings_dev.py
+settings_production.py

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<div style="margin:40px;">
+
+<h3>Register</h3>
+
+<form method="post" action="/register/">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit" />
+</form>
+
+</div>
+
+{% endblock %}

@@ -1,4 +1,4 @@
-from helloworldapp.models import Project
+import helloworldapp.models
 from django.contrib import admin
 
-admin.site.register(Project)
+#admin.site.register(helloworldapp.models.Project)
