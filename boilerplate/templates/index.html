@@ -1,8 +1,115 @@
 {% extends "base.html" %}
 
+{% block title %}Django Boilerplate - A rock-solid default template for Django{% endblock %}
+
 {% block body %}
-<p>Hello World</p>
+<div class="container" xmlns="http://www.w3.org/1999/html">
 
-<p><img src="{{ STATIC_URL }}img/test.jpeg" /></p>
+<div class="page-header">
+    <h1><a href="/">Django <i>★</i> Boilerplate</a></h1>
+</div>
 
+<p>Django Boilerplate is a fast, robust and future-proof base template to get your project off the ground quickly and right-footed. </p>
+
+    <hr align="">
+
+    <ul>
+    <li><a rel="nofollow" href="http://www.html5boilerplate.com">HTML5 Boilerplate 2.0</a></li>
+    <li>Build script to optimize images, js and css files</li>
+    <li>OpenID authentication with a beautiful interface</li>
+    <li>User preferences model with caching and Gravatar link</li>
+    <li>Optimal caching and compression rules</li>
+    <li>Best practice site configuration defaults</li>
+    <li>MailChimp integration, @login_required decorator</li>
+    <li>Minimal code, detailed comments</li>
+</ul>
+
+    <hr />
+
+<div class="demo">
+    <div class="btn-toolbar">
+        <div class="btn-group">
+            <a class="btn btn-large" href="#">
+                Visit on GitHub
+            </a>
+        </div>
+        <div class="btn-group">
+            <a class="btn btn-large dropdown-toggle" data-toggle="dropdown" href="#">
+                Download
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Default Package</a></li>
+                <li><a data-toggle="modal" href="#downloadModal">Custom Package</a></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <a class="btn btn-large"  data-toggle="modal" href="#downloadModal">
+                Create a Project
+            </a>
+        </div>
+    </div>
+</div>
+
+    <hr />
+
+<h2>Getting started</h2>
+<p>Visit the <a rel="nofollow" href="https://github.com/metachris/appengine-boilerplate">GitHub repo</a> or download it in either <a rel="nofollow" href="https://github.com/metachris/appengine-boilerplate/zipball/master">zip</a> or <a rel="nofollow" href="https://github.com/metachris/appengine-boilerplate/tarball/master">tar</a> format.
+    Here is a quick guide for the first steps:</p>
+<pre># Clone the repository
+$ git clone git@github.com:metachris/appengine-boilerplate.git
+$ cd appengine-boilerplate
+
+# Start the app engine devserver
+$ &lt;GAE_DIR>/dev_appserver.py app
+
+# You can now visit the site via localhost:8080
+$ google-chrome http://localhost:8080
+
+# To build and preview the site before uploading
+$ ./upload_to_appengine.sh
+Build the project with 'ant minify' now? [yN]y
+... lots of build output ...
+Setting /static to /static_dev/publish
+You can now test the latest build. Do you wish to upload this version? [yN]n
+Setting /static back to /static_dev</pre>
+
+
+<hr />
+
+<h2>How can I contribute?</h2>
+<p>If you have ideas for changes to the project, join us on Github and file a ticket, or send over a pull request if you have working code!</p>
+
+
+</div>
+
+<div class="modal" id="downloadModal" style="display: none;">
+    <div class="modal-header">
+        <button class="close" data-dismiss="modal">×</button>
+        <h3>Build a New Project</h3>
+    </div>
+    <div class="modal-body">After setting a few infos you'll can download a custom package.
+        <p>
+            <form class="form-horizontal">
+                <fieldset>
+                    <div class="control-group">
+                        <label class="control-label" for="input01">Text input</label>
+                        <div class="controls">
+                            <input type="text" class="input-xlarge" id="input01">
+                            <p class="help-block">Supporting help text</p>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </p>
+    </div>
+    <div class="modal-footer">
+        <a href="#" class="btn">Close</a>
+        <a href="#" class="btn btn-primary">Save changes</a>
+    </div>
+</div>
+{% endblock %}
+
+{% block js_bottom %}
+<script src="{{ STATIC_URL }}js/index.js"></script>
 {% endblock %}
