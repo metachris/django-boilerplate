@@ -5,8 +5,8 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^$', 'helloworldapp.views.home', name='home'),
-    url(r'^project/(?P<project_id>\d+)/$', 'helloworldapp.views.project'),
+    url(r'^$', 'mainapp.views.home', name='home'),
+    url(r'^project/(?P<project_id>\d+)/$', 'mainapp.views.project'),
 
     # Login and logout url's
     (r'^login/$', 'django.contrib.auth.views.login',

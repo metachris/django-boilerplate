@@ -1,6 +1,6 @@
 #  -------------------------------------------------------------------------
 # | Settings in here will always be included (on any machine, dev or prod), |
-# | and either settings_dev.py or settings_production.py will be included   |
+# | and either settings_dev.py.py or settings_production.py will be included   |
 # | (depending on whether the current host's network name is in the         |
 # | HOSTS_PRODUCTION list in hosts.py                                       |
 #  -------------------------------------------------------------------------
@@ -71,7 +71,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    "/Users/chris/Projects/private/django/django-boilerplate/boilerplate/static/",
+    "/Users/chris/Projects/private/django/django-boilerplate/app/static/",
     )
 
 # List of finder classes that know how to find static files in
@@ -101,13 +101,13 @@ MIDDLEWARE_CLASSES = (
 if DEBUG:
     MIDDLEWARE_CLASSES += ('debug_toolbar.middleware.DebugToolbarMiddleware',)
 
-ROOT_URLCONF = 'boilerplate.urls'
+ROOT_URLCONF = 'app.urls'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates"
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    "/Users/chris/Projects/private/django/django-boilerplate/boilerplate/templates",
+    "/Users/chris/Projects/private/django/django-boilerplate/app/templates",
     )
 
 INSTALLED_APPS = (
@@ -132,7 +132,7 @@ INSTALLED_APPS = (
     #'redis_status',
 
     # Main app from the diary project
-    'boilerplate.helloworldapp',
+    'app.mainapp',
     )
 
 if DEBUG:

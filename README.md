@@ -12,20 +12,22 @@ Quick Start
 ===========
 Create a project directory, setup virtualenv, clone the project and setup the dependencies:
 
-	# Create and activate virtual env
+	# Clone django-boilerplate into project directory
+    $ git clone git@github.com:metachris/django-boilerplate.git <YOUR_PROJECT_DIR>
+    $ cd <YOUR_PROJECT_DIR>
+
+	# Create and activate virtual env, and install dependencies
 	$ virtualenv <ENV_DIR>
 	$ . <ENV_DIR>/bin/activate
-
-	# Clone django-boilerplate and install dependencies
-    $ git clone django-boilerplate
-    $ cd django-boilerplate
     $ pip install -r dependencies.txt
 
     # Setting up Twitter Bootstrap
     $ git submodule init
     $ git submodule update
 
-    # finally setup bootstrap dependencies and build bootstrap
+    # Build bootstrap for the first time
+    $ cd app/static/twitter-bootstrap
+    $ make bootstrap
 
 
 Twitter-Bootstrap
